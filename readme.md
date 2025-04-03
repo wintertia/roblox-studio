@@ -1,6 +1,6 @@
 <p align="center">
     <img src="https://github.com/rose-pine/rose-pine-theme/raw/main/assets/icon.png" width="80" />
-    <h2 align="center">Rosé Pine for App</h2>
+    <h2 align="center">Rosé Pine for Roblox Studio</h2>
 </p>
 
 <p align="center">All natural pine, faux fur and a bit of soho vibes for the classy minimalist</p>
@@ -13,35 +13,24 @@
 
 ## Usage
 
-1. Open App
-2. Under settings, import `rose-pine.theme`
-3. Select `Rosé Pine` from the themes dropdown
+1. Open Roblox Studio
+2. Using the command bar, paste the code based on your preferred theme:
+   * Rose Pine
+    ```lua
+    local rosePine = { ["Base"] = "#191724", ["Surface"] = "#1f1d2e", ["Overlay"] = "#26233a", ["Muted"] = "#6e6a86", ["Subtle"] = "#908caa", ["Text"] = "#e0def4", ["Love"] = "#eb6f92", ["Gold"] = "#f6c177", ["Rose"] = "#ebbcba", ["Pine"] = "#31748f", ["Foam"] = "#9ccfd8", ["Iris"] = "#c4a7e7", ["HighlightLow"] = "#21202e", ["HighlightMed"] = "#403d52", ["HighlightHigh"] = "#524f67",  } local color = rosePine local theme = { ["Background Color"] = color.Base, ["Selection Color"] = color.Text, ["Selection Background Color"] = color.Muted, ["Error Color"] = color.Muted, ["Warning Color"] = color.Love, ["Find Selection Background Color"] = color.HighlightLow, ["Matching Word Background Color"] = color.HighlightMed, ["Whitespace Color"] = color.Pine, ["Current Line Highlight Color"] = color.Base, ["Ruler Color"] = color.Text, ["Bracket Color"] = color.Text, ["Text Color"] = color.Text, ["Operator Color"] = color.Pine, ["Number Color"] = color.Rose, ["String Color"] = color.Gold, ["Comment Color"] = color.Subtle, ["Bool Color"] = color.Rose, ["\"nil\" Color"] = color.Rose, ["Function Name Color"] = color.Iris, ["\"function\" Color"] = color.Pine, ["\"local\" Color"] = color.Pine, ["\"self\" Color"] = color.Pine, ["Luau Keyword Color"] = color.Text, ["Keyword Color"] = color.Pine, ["Built-in Function Color"] = color.Iris, ["\"TODO\" Color"] = color.Text, ["Method Color"] = color.Iris, ["Property Color"] = color.Foam, } local studio = settings().Studio for name, color in pairs(theme) do color = Color3.fromHex(color) local success = pcall(function() studio[name] = color end) if not success then warn(("%s is not a valid theme color"):format(name)) end end print("Successfully changed your Script Editor theme!")
+    ```
+   * Rose Pine Moon
+    ```lua
+    local rosePineMoon = { ["Base"] = "#232136", ["Surface"] = "#2a273f", ["Overlay"] = "#393552", ["Muted"] = "#6e6a86", ["Subtle"] = "#908caa", ["Text"] = "#e0def4", ["Love"] = "#eb6f92", ["Gold"] = "#f6c177", ["Rose"] = "#ea9a97", ["Pine"] = "#3e8fb0", ["Foam"] = "#9ccfd8", ["Iris"] = "#c4a7e7", ["HighlightLow"] = "#2a283e", ["HighlightMed"] = "#44415a", ["HighlightHigh"] = "#56526e",  } local color = rosePineMoon local theme = { ["Background Color"] = color.Base, ["Selection Color"] = color.Text, ["Selection Background Color"] = color.Muted, ["Error Color"] = color.Muted, ["Warning Color"] = color.Love, ["Find Selection Background Color"] = color.HighlightLow, ["Matching Word Background Color"] = color.HighlightMed, ["Whitespace Color"] = color.Pine, ["Current Line Highlight Color"] = color.Base, ["Ruler Color"] = color.Text, ["Bracket Color"] = color.Text, ["Text Color"] = color.Text, ["Operator Color"] = color.Pine, ["Number Color"] = color.Rose, ["String Color"] = color.Gold, ["Comment Color"] = color.Subtle, ["Bool Color"] = color.Rose, ["\"nil\" Color"] = color.Rose, ["Function Name Color"] = color.Iris, ["\"function\" Color"] = color.Pine, ["\"local\" Color"] = color.Pine, ["\"self\" Color"] = color.Pine, ["Luau Keyword Color"] = color.Text, ["Keyword Color"] = color.Pine, ["Built-in Function Color"] = color.Iris, ["\"TODO\" Color"] = color.Text, ["Method Color"] = color.Iris, ["Property Color"] = color.Foam, } local studio = settings().Studio for name, color in pairs(theme) do color = Color3.fromHex(color) local success = pcall(function() studio[name] = color end) if not success then warn(("%s is not a valid theme color"):format(name)) end end print("Successfully changed your Script Editor theme!")
+    ```
+   * Rose Pine Dawn
+    ```lua
+    local rosePineDawn = { ["Base"] = "#faf4ed", ["Surface"] = "#fffaf3", ["Overlay"] = "#f2e9e1", ["Muted"] = "#9893a5", ["Subtle"] = "#797593", ["Text"] = "#575279", ["Love"] = "#b4637a", ["Gold"] = "#ea9d34", ["Rose"] = "#d7827e", ["Pine"] = "#286983", ["Foam"] = "#56949f", ["Iris"] = "#907aa9", ["HighlightLow"] = "#f4ede8", ["HighlightMed"] = "#dfdad9", ["HighlightHigh"] = "#cecacd",  } local color = rosePineDawn local theme = { ["Background Color"] = color.Base, ["Selection Color"] = color.Text, ["Selection Background Color"] = color.Muted, ["Error Color"] = color.Muted, ["Warning Color"] = color.Love, ["Find Selection Background Color"] = color.HighlightLow, ["Matching Word Background Color"] = color.HighlightMed, ["Whitespace Color"] = color.Pine, ["Current Line Highlight Color"] = color.Base, ["Ruler Color"] = color.Text, ["Bracket Color"] = color.Text, ["Text Color"] = color.Text, ["Operator Color"] = color.Pine, ["Number Color"] = color.Rose, ["String Color"] = color.Gold, ["Comment Color"] = color.Subtle, ["Bool Color"] = color.Rose, ["\"nil\" Color"] = color.Rose, ["Function Name Color"] = color.Iris, ["\"function\" Color"] = color.Pine, ["\"local\" Color"] = color.Pine, ["\"self\" Color"] = color.Pine, ["Luau Keyword Color"] = color.Text, ["Keyword Color"] = color.Pine, ["Built-in Function Color"] = color.Iris, ["\"TODO\" Color"] = color.Text, ["Method Color"] = color.Iris, ["Property Color"] = color.Foam, } local studio = settings().Studio for name, color in pairs(theme) do color = Color3.fromHex(color) local success = pcall(function() studio[name] = color end) if not success then warn(("%s is not a valid theme color"):format(name)) end end print("Successfully changed your Script Editor theme!")
+    ```
 
 ## Gallery
 
-![Rosé Pine with App](https://user-images.githubusercontent.com/1474821/166155319-06796439-95a7-4aea-910e-927c1f24518e.png)
 
 ## Thanks to
 
-- [You, it's you!](https://github.com/<username>)
-
-## Contributing
-
-> Prefer using [@rose-pine/build](https://github.com/rose-pine/build) when possible
-
-Modify `template.json` using Rosé Pine variables, then build variants:
-
-```sh
-npx @rose-pine/build@latest
-```
-
-## Style guide
-
-> Be sure to remove this section 😌
-
-- Lowercase meta files, eg. `readme.md`
-- Repo name should be the simplest version of the app name, eg. iterm instead of iTerm2
-- Add a description and topics to automatically show the theme on [rosepinetheme.com/themes](https://rosepinetheme.com/themes)
-    - Description should read "Soho vibes for App" where "App" is the display name
-    - Topics should include [existing categories](https://rosepinetheme.com/themes)
-    - Generate and upload social image via [Rosé Pine Images](https://rose-pine-images.vercel.app)
+- [wintertia](https://github.com/wintertia)
